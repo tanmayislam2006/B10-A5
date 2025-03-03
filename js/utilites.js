@@ -26,3 +26,8 @@ function displayAdd(id, status) {
     element.classList.add(status);
 
 }
+// convert string to number 
+function makeNumber(value){
+    const convertNumber=parseFloat(value)
+    return convertNumber
+}

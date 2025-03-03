@@ -59,7 +59,7 @@
             <!-- balance  -->
             <div class="flex items-center gap-2">
                 <img src="./assets/coin.png" alt="">
-                <h3 class="text-lg text-gray-600" id="main-balance">5000 <span>BDT</span></h3>
+                <h3 class="text-lg text-gray-600" id="main-balance">50000 <span>BDT</span></h3>
             </div>
         </nav>
     </header>
@@ -67,11 +67,11 @@
     <div class="flex justify-center my-6 gap-10 ">
         <!-- donate button  -->
         <div class="">
-            <button class="bg-primary py-2 px-4 rounded-lg">Donation</button>
+            <button id="donation-btn" class="bg-primary py-2 px-4 rounded-lg">Donation</button>
         </div>
         <!-- history button  -->
         <div class="">
-            <button class="text-gray-500 border py-2 px-6 rounded-lg">History</button>
+            <button id="history-btn" class="text-gray-500 border py-2 px-6 rounded-lg">History</button>
         </div>
     </div>
     <!-- donation card-1  -->
@@ -90,11 +90,11 @@
                 disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief
                 efforts and making a positive impact on the lives of those in need.</p>
             <!-- input  -->
-            <div class="my-4  w-full"><input class="py-4 px-4 text-gary-40 rounded-xl border w-full "
-                    placeholder="Write Your Amount" id="donate-amount" type="text"></div>
+            <div class="my-4  w-full"><input class="donate-amount py-4 px-4 text-gary-40 rounded-xl border w-full "
+                    placeholder="Write Your Amount" value="1000" id="donate-amount" type="text"></div>
             <!-- donate button  -->
             <div class="my-3 w-full flex justify-center">
-                <button class="bg-primary py-3 w-full rounded-lg" id="donate-btn">Donate</button>
+                <button class="bg-primary py-3 w-full rounded-lg donate-btn" id="donate-btn">Donate</button>
             </div>
         </div>
     </section>
@@ -112,10 +112,10 @@
             <p class="text-gray-500 max-w-lg">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
             <!-- input  -->
             <div class="my-4  w-full"><input class="py-4 px-4 text-gary-40 rounded-xl border w-full "
-                    placeholder="Write Your Amount" id="donate-amount" type="text"></div>
+                    placeholder="Write Your Amount" value="650" id="donate-amount" type="text"></div>
             <!-- donate button  -->
             <div class="my-3 w-full flex justify-center">
-                <button class="bg-primary py-3 w-full rounded-lg" id="donate-btn">Donate</button>
+                <button class="bg-primary py-3 w-full rounded-lg donate-btn" id="donate-btn">Donate</button>
             </div>
         </div>
     </section>
@@ -137,11 +137,11 @@
                 vital role in alleviating their suffering and aiding in their recovery. Please consider making a
                 donation to support these brave individuals in their time of need.</p>
             <!-- input  -->
-            <div class="my-4  w-full"><input class="py-4 px-4 text-gary-40 rounded-xl border w-full "
+            <div class="my-4  w-full"><input value="500" class="py-4 px-4 text-gary-40 rounded-xl border w-full "
                     placeholder="Write Your Amount" id="donate-amount" type="text"></div>
             <!-- donate button  -->
             <div class="my-3 w-full flex justify-center">
-                <button class="bg-primary py-3 w-full rounded-lg" id="donate-btn">Donate</button>
+                <button class="bg-primary py-3 w-full rounded-lg donate-btn" id="donate-btn">Donate</button>
             </div>
         </div>
     </section>
@@ -155,6 +155,13 @@
             <div class="my-3"><button class="bg-gray-300 rounded-lg px-4 py-2" id="close-btn">close confrmation</button></div>
         </div>
     </div>
+    <!-- history section sample  -->
+     <div id="history-section" class=" hidden mx-w-4xl py-6 mx-5  gap-8 my-10  ">
+        <div class="border py-10 pl-10 border-bordercolor rounded-xl">
+            <h3 class="font-medium text-lg">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+            <p class="text-gray-500">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+        </div>
+     </div>
     <script src="./js/utilites.js"></script>
     <script src="./js/script.js"></script>
 </body>
